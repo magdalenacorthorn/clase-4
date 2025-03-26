@@ -45,6 +45,15 @@
                 }
             }
 
+            @keyframes flote {
+                100% {
+                    transform: translateX(700px);
+                }
+                0% {
+                    transform: translateX(0);
+                }
+            }
+
             polygon#iceberg {
                 animation: flota 3s ease infinite alternate;
             }
@@ -92,7 +101,6 @@
             }
 
             div#cierre{
-                margin-top: 10vh;
                 width: 100%;
                 text-align: center;
             }
@@ -102,6 +110,20 @@
                 margin: 0 auto;
                 animation: flota 1s ease infinite alternate;
             }
+
+            div#barco{
+                margin-top: 10vh;
+                width: 100%;
+               
+
+            }
+
+            div#barco img{
+                width: 20%;
+                margin: 0 auto;
+                animation: flote 3s ease infinite alternate;
+            }
+
         </style>
     </head>
     <body>
@@ -159,6 +181,11 @@
                     </svg></td>
                 </tr>
             </table>
+
+        <div id="barco">
+             <img src= "img/boat.png" />
+</div>
+            
 
         <div id="cierre">
     <img src="https://www.gerdarntz.org/sites/gerdarntz.org/files/GMDH02_00290.gif" />
